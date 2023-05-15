@@ -1,0 +1,39 @@
+@import "bulma.sass";
+
+main {
+  max-width: 70ch;
+  margin: auto;
+}
+
+.tweets {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  .tweet:not(first-child):not(last-child) {
+    border-top: 1px solid black;
+  };
+}
+
+.tweet {
+  padding: 10px
+}
+
+header {
+  .banner {
+    margin-bottom: -64px;
+    width: 100%;
+  };
+  .avatar {
+    left: 15px;
+  }
+  position: relative;
+}
+
+.displayname {
+  font-weight: bold;
+}
+.displayname + .username {
+  margin-left: 1ch;
+}
+.username {
+  opacity: 0.75;
+}
