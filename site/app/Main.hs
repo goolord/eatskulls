@@ -148,7 +148,7 @@ renderTweets mediaMap tweets =
             Nothing -> img_ [src_ $ media_MediaURL media]
             Just localFile -> case media_MediaType media of
               MediaTypeImage -> img_   [ class_ "local", src_ $ "static/media/" <> localFile ]
-              MediaTypeVideo -> video_ [ class_ "local", src_ $ "static/media/" <> localFile ] (pure ())
+              MediaTypeVideo -> video_ [ class_ "local", controls_ "", src_ $ "static/media/" <> localFile ] (pure ())
 
 main :: IO ()
 main = do
